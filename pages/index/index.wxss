@@ -1,0 +1,35 @@
+.container {
+  background-color: #f1f1f0;
+  height: 100vh;
+}
+.container .li-list {
+  padding: 0rpx 20rpx 0rpx 20rpx;
+}
+.container .li-list .li {
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx 20rpx;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.container .li-list .li .li-top {
+  display: flex;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .li-list .li .li-top .i-top-cont .i-top-cont-top {
+  font-size: 30rpx;
+}
+.container .li-list .li .li-top .i-top-cont .i-top-cont-bottom {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.container .li-list .li .li-bottom {
+  margin-top: 10rpx;
+}
+.container .li-list .li .li-bottom button {
+  background-color: #f10404;
+  background-image: var(--background);
+}

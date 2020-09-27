@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.container image {
+  margin-top: 100rpx;
+}
+.container .title {
+  justify-content: center;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.container form {
+  width: 100%;
+  padding: 40rpx 40rpx;
+  box-sizing: border-box;
+}
+.container form .view_input {
+  display: flex;
+  margin-top: 40rpx;
+  padding: 15rpx 0rpx;
+  border-bottom: 1px solid #e9e7e7;
+}
+.container form .view_input .view_input_text {
+  font-size: 30rpx;
+  width: 150rpx;
+}
+.container form .view_input input {
+  font-size: 30rpx;
+}
+.container form .view_input .btn {
+  width: 160rpx;
+  padding: 12rpx;
+  text-align: center;
+  font-size: 25rpx;
+  border-radius: 10rpx;
+  margin-top: 0rpx;
+  background-color: transparent;
+  line-height: 30rpx;
+}
+.container form .view_input .green {
+  color: rgba(26, 173, 25, 0.6);
+  border: 1rpx solid rgba(26, 173, 25, 0.6);
+}
+.container form .view_input .defu {
+  color: #e9e7e7;
+  border: 1rpx solid #e9e7e7;
+}
+.container form .view_btn {
+  margin-top: 80rpx;
+}
+.container form .view_btn button {
+  background-color: #f10404;
+  background-image: var(--background);
+}
+.container .loginPop {
+  position: fixed;
+  width: 680rpx;
+  background: #fff;
+  left: 50%;
+  margin-left: -340rpx;
+  top: 150rpx;
+  padding: 40rpx 20rpx;
+  border-radius: 4rpx;
+  z-index: 100;
+}
+.container .loginPop .loginPop_h2 {
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30rpx;
+}
+.container .loginPop .loginPop_p {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  padding-bottom: 15rpx;
+}
+.container .loginPop .loginPop_p2 {
+  color: #f00;
+  padding-bottom: 40rpx;
+}
+.container .loginMask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}

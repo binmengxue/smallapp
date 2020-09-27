@@ -1,0 +1,100 @@
+.container {
+  padding: 40rpx 40rpx 20rpx 40rpx;
+  text-align: center;
+}
+.container .alipay-top {
+  display: flex;
+  flex-direction: column;
+}
+.container .alipay-top .alipay-top-ti {
+  display: flex;
+  font-size: 28rpx;
+  justify-content: flex-start;
+}
+.container .alipay-top .alipay-top-title {
+  display: flex;
+  font-size: 35rpx;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.container .alipay-top .alipay-top-money {
+  display: flex;
+  font-size: 60rpx;
+  margin-top: 10rpx;
+  justify-content: center;
+}
+.container .alipay-list {
+  background: #ececec;
+  border-radius: 10rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  margin: 40rpx 0;
+}
+.container .alipay-list .alipay-list-li {
+  border-bottom: 1px dotted #e0e0e0;
+  height: 100rpx;
+  display: flex;
+  font-size: 28rpx;
+  color: #4d4d4d;
+  position: relative;
+  align-items: center;
+}
+.container .alipay-list .alipay-list-li .title {
+  font-weight: bold;
+}
+.container .alipay-list .alipay-list-li .text-left {
+  display: block;
+  width: 140rpx;
+}
+.container .alipay-list .alipay-list-li button {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 20rpx 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 14rpx;
+  background: #fff;
+  color: #6480b4;
+  border-radius: 20rpx;
+}
+.container .alipay-list .alipay-list-li:last-child {
+  border-bottom: 0px dotted #e0e0e0;
+}
+.container .alipay-list .lat button {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 20rpx 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 20rpx;
+  background: #fff;
+  color: #6480b4;
+  border-radius: 20rpx;
+}
+.container .alipay-bottom {
+  font-size: 35rpx;
+  text-align: center;
+}
+.container .alipay-ti {
+  font-size: 30rpx;
+  color: #fcad05;
+  margin: 20rpx 0 40rpx 0;
+}
+.container button {
+  background: var(--background);
+  color: #fff;
+}
+.container modal .view-title {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.container modal .view-img {
+  width: 300rpx;
+  height: 300rpx;
+  border: 1px dashed #e0e0e0;
+  margin: 60rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}

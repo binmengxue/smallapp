@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/bankpay/index",
+    "pages/out/index",
+    "pages/index/index",
+    "pages/borrowDetail/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d30303",
+    "navigationBarTitleText": "数科调解中心",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#d30303",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "查询",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

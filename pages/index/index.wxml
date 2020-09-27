@@ -1,0 +1,23 @@
+<!-- index.wxml -->
+<view class="container">
+    <scroll-view scroll-y="true" style=" height: 100vh">
+        <view  class="li-list">
+            <view  class="li" wx:for="{{list}}" wx:key="id">
+                <view class="li-top">
+                    <view  class="i-top-cont">
+                        <view class="i-top-cont-top">
+                          <text>案件分类：{{item.caseSourceName}}</text>
+                          <text></text>
+                        </view>
+                        <view class="i-top-cont-bottom">调解编号：{{item.loadId}} </view>
+                    </view>
+                </view>
+                <view class="li-bottom">
+                        <button type="primary" bindtap="toPage"  data-loadId="{{item.loadId}}" data-id="{{item.id}}">查看详情</button>
+                </view>
+            </view>
+        </view>
+    </scroll-view >
+
+
+</view>

@@ -1,0 +1,18 @@
+<!--pages/bankpay/index.wxml-->
+<view class="container">
+  <image style="width:500rpx;height:500rpx;border:1px solid #fcfcfc;margin:30rpx auto" mode="widthFix" src="{{filePath}}"></image>
+  <button  bindtap="updateEvent">上传凭证</button>
+  <modal 
+       hidden="{{hiddenModle}}" 
+       confirm-text="上传" 
+       cancel-text="取消" 
+       bindcancel="updatecancel" 
+       bindconfirm="updateconfirm"
+     >  
+      <view class="view-title">请上传<text style="color:#fcad05">凭证</text></view>
+      <view class="view-img"  bindtap="updateFile">
+           <image  style="width:150rpx" mode="widthFix" src="{{filePath}}" />
+      </view>
+   </modal> 
+</view>
+

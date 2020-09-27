@@ -1,0 +1,23 @@
+
+<view class="container">
+     <image style="width:142rpx; " mode="widthFix" src="../../images/public/logo.png"></image>
+     <view class="title">数科调解中心</view>
+     <form catchsubmit="formSubmit">
+         <view class="view_input">
+            <view class="view_input_text">身份证号</view>
+            <input name="identityNo" type="text"  value="{{parameters.identityNo}}" placeholder="请输入正确身份证号" />
+         </view>
+         <view class="view_input">
+            <view class="view_input_text">登录密码</view>
+            <input name="password" type="number" bindinput='getPassword' value="{{parameters.password}}" placeholder="请输入密码" />
+         </view>
+         <view class="view_btn">
+            <button  type="primary" formType="submit">登录</button>
+         </view>
+      </form>
+      <view class="loginPop" wx:if="{{showModal}}">
+         <view class="loginPop_p">德兴市数科金融调解中心是由德兴市司法局批准成立，接受德兴市人民法院指导调解工作，在德兴市民政局注册登记的组织，同时接受德兴市司法局的日常管理。</view>
+         <button  type="warn" bindtap="toPage" >知道了</button>
+      </view>
+      <view class="loginMask" wx:if="{{showModal}}"></view>
+</view>

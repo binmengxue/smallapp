@@ -1,0 +1,14 @@
+
+<view class="user_info_wrap">
+      <view class="user_view">
+          <view class="user_view_title">查询号码</view>
+          <view class="user_view_input">
+              <input type='text'placeholder="请输入内容" value="{{inputValue}}" bindinput="bindKeyInput" /> 
+              <button bindtap="toSearch" >查询</button>
+           </view>
+           <view class="user_view_cont" wx:if="{{isShow}}" >
+              <view class="user_view_cont_p"><text>德兴市数科金融调解中心</text></view>
+              <view class="user_view_cont_p"><text>德兴市数科金融调解中心是由德兴市司法局批准成立，接受德兴市人民法院指导调解工作，在德兴市民政局注册登记的组织，同时接受德兴市司法局的日常管理。</text></view>
+            </view>
+      </view>
+</view>

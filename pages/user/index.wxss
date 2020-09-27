@@ -1,0 +1,50 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  color: #222;
+}
+.user_info_wrap .user_view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30rpx;
+}
+.user_info_wrap .user_view .user_view_title {
+  font-size: 35rpx;
+  padding-top: 20rpx;
+}
+.user_info_wrap .user_view .user_view_input {
+  display: flex;
+  margin: 30rpx 0;
+}
+.user_info_wrap .user_view .user_view_input input {
+  width: 460rpx;
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 80rpx;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.user_info_wrap .user_view .user_view_input button {
+  border-radius: 0;
+  height: 84rpx;
+  font-size: 32rpx;
+}
+.user_info_wrap .user_view .user_view_cont {
+  padding: 20rpx 30rpx;
+  color: #222;
+}
+.user_info_wrap .user_view .user_view_cont .user_view_cont_p {
+  line-height: 35rpx;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+}
+.user_content {
+  position: relative;
+  padding: 40rpx;
+}

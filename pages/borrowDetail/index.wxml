@@ -1,0 +1,40 @@
+<!--借款详情-->
+<view class="container">
+    <scroll-view scroll-y="true" style=" height: 100vh">
+        <view class="content">
+            <view class="content-h1">调解编号：<text >{{obj.loadId}}</text></view>
+            <view  class="content-h2">剩余总额：￥<text >{{obj.noRepayTotalAmount}}</text></view>
+            <view class="content-list">
+                <view  class="content-list-li">
+                    <view class="span1">放款日期</view>
+                    <view class="span2">{{obj.loadDate}}</view>
+                </view>
+                <view  class="content-list-li">
+                    <view class="span1">应还日期</view>
+                    <view class="span2">{{obj.payDate}}</view>
+                </view>
+                <view  class="content-list-li">
+                    <view class="span1">剩余本金</view>
+                    <view class="span2">￥{{obj.noRepayPrincipal}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="bottom-btn">
+       <button class="bottom-btn-left" bindtap="halfToBorrow">部分处理</button>
+       <button class="bottom-btn-right" bindtap="bindToPage">
+               全部处理￥{{obj.noRepayTotalAmount}}
+       </button>
+    </view>
+    <modal 
+       hidden="{{hiddenmodalput}}" 
+       confirm-text="提交" 
+       cancel-text="取消" 
+       bindcancel="cancel" 
+       bindconfirm="confirm"
+     >  
+     <view class="model-view">
+         <text >输入金额：</text><input type='text'placeholder="请输入内容" value="{{inputValue}}" bindinput="bindKeyInput" /> 
+     </view>
+   </modal> 
+</view>
